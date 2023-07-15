@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create Meeting</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">Find a teammate</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="map_information" id="map_information">
+      <div id="mapid" style="margin-top: 0.2em"></div>
+      <div class="content">
+        <form>
+          <h2>
+            <div class="form-item">
+              <label for="form-title">Title:</label>
+              <div class="form-element">
+                <input
+                  type="text"
+                  name="form-title"
+                  id="form-title"
+                  placeholder="Add title here"
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="form-author">Name:</label>
+              <div class="form-element">
+                <input
+                  type="text"
+                  name="author"
+                  id="form-author"
+                  placeholder="Add name here"
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="form-place">Place:</label>
+              <div class="form-element">
+                <input
+                  type="text"
+                  name="place"
+                  id="form-place"
+                  placeholder="Eg. QLD Brisbane"
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="form-date">Date:</label>
+              <div class="form-element">
+                <input
+                  type="text"
+                  name="date"
+                  id="form-date"
+                  placeholder="Eg. 22/9/2022"
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="form-keywords">Facilities:</label>
+              <div class="form-element">
+                <input
+                  type="text"
+                  name="keywords"
+                  id="form-keywords"
+                  placeholder="Eg. swing"
+                />
+              </div>
+            </div>
+
+            <div class="form-item">
+              <label for="form-photos">Photos:</label>
+              <input type="file" name="photos" id="form-photos" multiple />
+            </div>
+
+            <div class="form-item">
+              <label for="form-details">Meeting Details:</label>
+              <div class="form-element">
+                <textarea
+                  id="form-details"
+                  name="details"
+                  rows="8"
+                  placeholder="Write your meeting details here!"
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="button" id="create-meeting">Create Meeting</button>
+          </h2>
+        </form>
+      </div>
+    </section>
+    <h1 class="heading"><br /></h1>
+
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- The plugin 'Leaflet' is created by Vladimir Agafonkin (2010-2021) and retrived from https://leafletjs.com/ -->
+    <script src="js/leaflet.js"></script>
+    <script src="js/create_meeting.js"></script>
+    <script src="js/lib/js.cookie.js"></script>
+    <script src="js/lib/base64.js"></script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

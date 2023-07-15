@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground | Details</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">Find a teammate</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--route-->
+    <div class="route">
+      <div class="main">
+        <img src="images/home.svg" />
+        <span>Home</span>
+        <span>Playgrounds</span>
+        <span class="current">Playground details</span>
+      </div>
+    </div>
+
+    <!--product-->
+    <div class="pg-detail">
+      <div class="main">
+        <div class="left">
+          <div class="image">
+            <img src="images/pg_img_1.png" class="preview-image" />
+          </div>
+
+          <ul class="pics_list">
+            <li><img src="images/pg_img_1.png" /></li>
+            <li><img src="images/pg_img_2.png" /></li>
+            <li><img src="images/pg_img_3.png" /></li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <div class="title">Anzac Park All Abilities Playground</div>
+          <div class="like">
+            <img src="/images/unlike.png" alt="unlike" />
+          </div>
+          <div class="desc">
+            Interactive music elements, climbing net, bird's nest swing, garden
+            see-saw, play structure with slide, sensory plants,
+            wheelchair-accessible Sway Fun rocker
+          </div>
+
+          <div class="features">
+            <div class="features-title"><strong>features</strong></div>
+            <div class="features-container">
+              <ul class="features-list">
+                <li>
+                  <div class="image">
+                    <img src="images/toilet_icon.png" alt="toilet_icon" />
+                    <div class="feature-text">toilet</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="images/seat icon.png" alt="seat" />
+                    <div class="feature-text">seat</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="images/parking icon.png" alt="parking" />
+                    <div class="feature-text">parking</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="images/toddler_icon.png" alt="toddler_icon" />
+                    <div class="feature-text">toddler</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pg-contact">
+            <strong>Burdekin Shire Council on (07) 4783 9800</strong>
+          </div>
+          <hr />
+          <div class="action">
+            <ul>
+              <li>
+                <div class="pg-nav">
+                  <a href="https://map.google.com"><span>Navigate</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="find">
+                  <a href="playgrounds_meeting.html"
+                    ><span>Find Teammates</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+    <script
+      src="js/lib/jquery-3.4.1.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        // Preview picture switch
+        $(".pics_list img").on("click", function () {
+          $(".preview-image").attr("src", $(this).attr("src"));
+        });
+        // Like button
+        $(".like img").on("click", function () {
+          $(".like img").attr("src", "images/like.png");
+        });
+      });
+    </script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

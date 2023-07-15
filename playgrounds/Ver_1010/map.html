@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/calenfar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">Find a teammate</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--route-->
+    <div class="route">
+      <div class="main">
+        <img src="images/home.svg" />
+        <span>Home</span>
+        <span>Playgrounds</span>
+        <span class="current">Playground Maps</span>
+      </div>
+    </div>
+
+    <section class="map_information" id="map_information">
+      <div id="mapid"></div>
+
+      <div class="content">
+        <h3>Playgrounds</h3>
+        <p>
+          A website to use when you want to find nearby playgrounds and find
+          buddies.
+        </p>
+      </div>
+    </section>
+
+    <section class="search_bar">
+      <form>
+        <div class="inputBox">
+          <span>Name</span>
+          <input
+            type="text"
+            placeholder="eg. Mount Isa Family Fun Park"
+            value=""
+            id="search-name"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Postcode</span>
+          <input
+            type="text"
+            placeholder="eg. 4703"
+            value=""
+            id="search-postcode"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Suburb</span>
+          <input
+            type="text"
+            placeholder="eg. Yeppoon"
+            value=""
+            id="search-suburb"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Address1</span>
+          <input
+            type="text"
+            placeholder="eg. Appleton Park"
+            value=""
+            id="search-address1"
+          />
+        </div>
+        <div class="inputBox">
+          <span>Address2</span>
+          <input
+            type="text"
+            placeholder="eg. Anzac Parade"
+            value=""
+            id="search-address2"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Facilities</span>
+          <input
+            type="text"
+            placeholder="eg. bench seating"
+            value=""
+            id="search-facilities"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Features</span>
+          <input
+            type="text"
+            placeholder="eg. fishing rod"
+            value=""
+            id="search-playgroundsFeatures"
+          />
+        </div>
+      </form>
+    </section>
+
+    <h1 class="end">
+      <br />
+      <span> <br /><br /><br /></span>
+    </h1>
+
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- The plugin 'Leaflet' is created by Vladimir Agafonkin (2010-2021) and retrived from https://leafletjs.com/ -->
+    <script src="js/leaflet.js"></script>
+    <!-- The plugin 'Leaflet.PopupListLayer' is created by gisarmory (2020) and retrived from https://github.com/gisarmory/Leaflet.OverlapMarkerPopup -->
+    <script src="js/Leaflet.PopupListLayer.js"></script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

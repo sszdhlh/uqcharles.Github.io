@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Playgrounds Meeting</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">Find a teammate</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--route-->
+    <div class="route">
+      <div class="main">
+        <img src="images/home.svg" />
+        <span>Home</span>
+        <span>Playgrounds</span>
+        <span class="current">Find a teammate</span>
+      </div>
+    </div>
+    <section class="search_bar" id="meeting-search_bar">
+      <form>
+        <!--            <div class="inputBox">-->
+        <!--                <span>Qld</span>-->
+        <!--                <div id="main">-->
+        <!--                    <div id="content">-->
+        <!--                        <select name="mochu" id="search-postcode">-->
+        <!--                            <option value="4807">4807</option>-->
+        <!--                            <option value="4717">4717</option>-->
+        <!--                            <option value="4218">4218</option>-->
+        <!--                            <option value="4157">4157</option>-->
+        <!--                            <option value="4869">4869</option>-->
+        <!--                            <option value="4570">4570</option>-->
+        <!--                            <option value="4550">4550</option>-->
+        <!--                            <option value="4114">4114</option>-->
+        <!--                            <option value="4740">4740</option>-->
+        <!--                            <option value="4873">4873</option>-->
+        <!--                            <option value="4825">4825</option>-->
+        <!--                            <option value="4876">4876</option>-->
+        <!--                            <option value="4890">4890</option>-->
+        <!--                            <option value="4655">4655</option>-->
+        <!--                            <option value="4385">4385</option>-->
+        <!--                            <option value="4817">4817</option>-->
+        <!--                            <option value="4703">4703</option>-->
+        <!--                        </select>-->
+        <!--                    </div>-->
+        <!--                  </div>-->
+        <!--            </div>-->
+
+        <div class="inputBox">
+          <span>Name</span>
+          <input
+            type="text"
+            placeholder="eg. Mount Isa Family Fun Park"
+            value=""
+            id="search-name"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Postcode</span>
+          <input
+            type="text"
+            placeholder="eg. 4703"
+            value=""
+            id="search-postcode"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Suburb</span>
+          <input
+            type="text"
+            placeholder="eg. Yeppoon"
+            value=""
+            id="search-suburb"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Address1</span>
+          <input
+            type="text"
+            placeholder="eg. Appleton Park"
+            value=""
+            id="search-address1"
+          />
+        </div>
+        <div class="inputBox">
+          <span>Address2</span>
+          <input
+            type="text"
+            placeholder="eg. Anzac Parade"
+            value=""
+            id="search-address2"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Facilities</span>
+          <input
+            type="text"
+            placeholder="eg. bench seating"
+            value=""
+            id="search-facilities"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Features</span>
+          <input
+            type="text"
+            placeholder="eg. fishing rod"
+            value=""
+            id="search-playgroundsFeatures"
+          />
+        </div>
+      </form>
+    </section>
+
+    <p style="text-align: center">
+      The data is retrieved from
+      <a
+        href="https://www.data.qld.gov.au/dataset/all-abilities-playgrounds/resource/b6d053f3-7df4-4cb1-938a-33b5995d6e3f"
+        target="_blank"
+        >All abilities playgrounds</a
+      >.
+    </p>
+
+    <section class="meeting-container" id="meeting-container">
+      <div class="box-container" id="meetings"></div>
+    </section>
+
+    <h1 class="end">
+      <br />
+      <span> <br /><br /><br /></span>
+    </h1>
+
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/playgrounds_meeting.js"></script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

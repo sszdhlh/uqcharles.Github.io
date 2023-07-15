@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Playgrounds Meeting</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body οnlοad="load();">
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">event_list</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--route-->
+    <div class="route">
+      <div class="main">
+        <img src="images/home.svg" />
+        <span>Home</span>
+        <span>Playgrounds</span>
+        <span class="current">Find a teammate</span>
+      </div>
+    </div>
+    <section class="search_bar" id="meeting-search_bar">
+      <form>
+        <div class="inputBox">
+          <span>Name</span>
+          <input
+            type="text"
+            placeholder="eg. Name"
+            value=""
+            id="search-Name"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Title</span>
+          <input
+            type="text"
+            placeholder="eg. Title"
+            value=""
+            id="search-Title"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Place</span>
+          <input
+            type="text"
+            placeholder="eg. Place"
+            value=""
+            id="search-Place"
+          />
+        </div>
+
+        <div class="inputBox">
+          <span>Date</span>
+          <input
+            type="text"
+            placeholder="eg. Date"
+            value=""
+            id="search-Date"
+          />
+        </div>
+        <div class="inputBox">
+          <span>Facilities</span>
+          <input
+            type="text"
+            placeholder="eg. Facilities"
+            value=""
+            id="search-Facilities"
+          />
+        </div>
+        <div class="inputBox">
+          <span>Details</span>
+          <input
+            type="text"
+            placeholder="eg. Details"
+            value=""
+            id="search-Details"
+          />
+        </div>
+
+       
+
+        <!-- <div class="inputBox">
+          <span>Features</span>
+          <input
+            type="text"
+            placeholder="eg. fishing rod"
+            value=""
+            id="search-playgroundsFeatures"
+          />
+        </div> -->
+      </form>
+    </section>
+
+    <p style="text-align: center">
+      The data is retrieved from
+      <a
+        href="https://www.data.qld.gov.au/dataset/all-abilities-playgrounds/resource/b6d053f3-7df4-4cb1-938a-33b5995d6e3f"
+        target="_blank"
+        >All abilities playgrounds</a
+      >.
+    </p>
+   <!-- body-details -->
+    <section class="meeting-container" id="meeting-container">
+      <div class="box-container" id="meetings"></div>
+    </section>
+
+    <h1 class="end">
+      <br />
+      <span> <br /><br /><br /></span>
+    </h1>
+
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/event_list.js"></script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

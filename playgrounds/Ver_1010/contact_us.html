@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/calenfar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="main">
+        <ul class="logo">
+          <a href="#"><img src="images/icon.png" /></a>
+          <a href="#" class="icon_text">Playground</a>
+        </ul>
+
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="playgrounds_meeting.html">Find a teammate</a>
+          </li>
+          <li>
+            <a href="calendar.html">Your Event</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li>
+            <a href="#"><img src="images/person.png" /></a>
+          </li>
+          <li class="burger">
+            <div class="toggleMenu"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--route-->
+    <div class="route">
+      <div class="main">
+        <img src="images/home.svg" />
+        <span>Home</span>
+        <span class="current">Contact us</span>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="container">
+        <div class="con">
+          <div class="image-box">
+            <img src="./images/contact.jpg" alt="" />
+            <p class="reference-text">The image of the Pixabay (n.d.)</p>
+          </div>
+          <form action="#">
+            <div class="topic">Send us a message</div>
+            <div class="input-box">
+              <input type="text" required id="contact-name" />
+              <label> Enter your name </label>
+            </div>
+            <div class="input-box">
+              <input type="text" required id="contact-email" />
+              <label> Enter your email </label>
+            </div>
+            <div class="form-element1">
+              <textarea
+                id="form-details"
+                name="details"
+                rows="8"
+                placeholder=" Enter your message"
+              ></textarea>
+            </div>
+
+            <div class="input-box" id="contact-submit">
+              <input type="submit" id="send-message" value="Send message" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="created_information">
+        Created by HYDRUS Team | <a href="about_us.html">About us</a>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $("#send-message").click(function () {
+        if ($("#contact-name").val() && $("#contact-email").val()) {
+          alert("Send successfully!");
+        }
+      });
+    </script>
+    <script src="js/rwd.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
